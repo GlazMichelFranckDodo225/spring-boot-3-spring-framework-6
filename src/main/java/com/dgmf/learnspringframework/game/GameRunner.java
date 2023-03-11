@@ -1,9 +1,14 @@
 package com.dgmf.learnspringframework.game;
 
 public class GameRunner {
-	MarioGame game;
+	// private MarioGame game;
+	private SuperContraGame game;
 	
-	public GameRunner(MarioGame game) {
+//	public GameRunner(MarioGame game) {
+//		this.game = game;
+//	}
+	
+	public GameRunner(SuperContraGame game) {
 		this.game = game;
 	}
 
