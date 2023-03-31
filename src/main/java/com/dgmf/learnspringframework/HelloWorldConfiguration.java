@@ -28,6 +28,12 @@ public class HelloWorldConfiguration {
 		
 	}
 	
+	@Bean
+	public Person person2MethodCall() {
+		return new Person(name(), age());
+		
+	}
+	
 	@Bean(name = "address2")
 	public Address address() {
 		return new Address("Baker Street", "London");
