@@ -35,6 +35,13 @@ public class HelloWorldConfiguration {
 		
 	}
 	
+	// Bean using existing Bean -> Parameters
+		@Bean
+		public Person person3Parameters(String name, int age, Address address2) {
+			return new Person(name, age, address2);
+			
+		}
+	
 	@Bean(name = "address2")
 	public Address address() {
 		return new Address("Baker Street", "London");
