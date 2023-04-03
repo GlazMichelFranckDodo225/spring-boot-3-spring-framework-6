@@ -1,5 +1,8 @@
 package com.dgmf.learnspringframework;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App02HelloWorldSpring {
@@ -18,6 +21,10 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person3Parameters"));
 		System.out.println(context.getBean("address2"));
 		System.out.println(context.getBean("address3"));
+		
+		// Afficher les noms de tous les Beans créés dans l'application
+		// context.getBeanDefinitionNames() ==> retourne String[]
+		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);;
 
 	}
 
