@@ -1,4 +1,4 @@
-package com.dgmf.learnspringframework;
+package com.dgmf.learnspringframework.helloworld;
 
 import java.sql.Array;
 import java.util.Arrays;

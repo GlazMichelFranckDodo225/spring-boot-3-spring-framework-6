@@ -1,4 +1,4 @@
-package com.dgmf.learnspringframework;
+package com.dgmf.learnspringframework.helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
