@@ -12,13 +12,15 @@ public class GamingConfiguration {
 	@Bean
 	public GamingConsole game() {
 		var game = new PacmanGame();
-		
+
 		return game;
 	}
-	
-	// var game = new MarioGame();
-	// var game = new SuperContraGame();
-	//	var game = new PacmanGame();
-	//	var gameRunner = new GameRunner(game);
-	//	gameRunner.run();
+
+	@Bean
+	public GameRunner gameRunner(GamingConsole game) {
+		var gameRunner = new GameRunner(game);
+
+		return gameRunner;
+	}
+
 }
