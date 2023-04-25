@@ -9,7 +9,7 @@ import com.dgmf.learnspringframework.game.GamingConsole;
 import com.dgmf.learnspringframework.game.PacmanGame;
 
 @Configuration
-class GamingConfiguration {
+public class App03GamingSpringBeans {
 	@Bean
 	public GamingConsole game() {
 		var game = new PacmanGame();
@@ -24,12 +24,8 @@ class GamingConfiguration {
 		return gameRunner;
 	}
 
-}
-
-public class App03GamingSpringBeans {
-
 	public static void main(String[] args) {
-		try (var context = new AnnotationConfigApplicationContext(GamingConfiguration.class)) {
+		try (var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)) {
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
 		}
