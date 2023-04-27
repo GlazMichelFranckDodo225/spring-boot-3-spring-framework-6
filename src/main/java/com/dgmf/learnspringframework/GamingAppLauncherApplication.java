@@ -2,6 +2,7 @@ package com.dgmf.learnspringframework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.dgmf.learnspringframework.game.GameRunner;
@@ -9,23 +10,10 @@ import com.dgmf.learnspringframework.game.GamingConsole;
 import com.dgmf.learnspringframework.game.PacmanGame;
 
 @Configuration
-public class App03GamingSpringBeans {
-	@Bean
-	public GamingConsole game() {
-		var game = new PacmanGame();
-
-		return game;
-	}
-
-	@Bean
-	public GameRunner gameRunner(GamingConsole game) {
-		var gameRunner = new GameRunner(game);
-
-		return gameRunner;
-	}
-
+@ComponentScan("com.dgmf.learnspringframework.game")
+public class GamingAppLauncherApplication {
 	public static void main(String[] args) {
-		try (var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)) {
+		try (var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class)) {
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
 		}
