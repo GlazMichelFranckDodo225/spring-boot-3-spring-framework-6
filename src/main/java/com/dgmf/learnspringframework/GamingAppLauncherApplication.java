@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.dgmf.learnspringframework.game.GameRunner;
 import com.dgmf.learnspringframework.game.GamingConsole;
+import com.dgmf.learnspringframework.game.MarioGame;
 import com.dgmf.learnspringframework.game.PacmanGame;
 
 @Configuration
