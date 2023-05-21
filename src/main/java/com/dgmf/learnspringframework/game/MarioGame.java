@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class MarioGame implements GamingConsole {
 	
 	public void up() {
-		System.out.println("Jump....");
+		System.out.println("Mario Jump....");
 	}
 	
 	public void down() {
@@ -16,11 +16,11 @@ public class MarioGame implements GamingConsole {
 	}
 	
 	public void left() {
-		System.out.println("Go back....");
+		System.out.println("Mario Go back....");
 	}
 	
 	public void right() {
-		System.out.println("Accelerate....");
+		System.out.println("Mario Accelerate....");
 	}
 
 }
