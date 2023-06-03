@@ -10,12 +10,34 @@ import org.springframework.stereotype.Component;
 
 @Component
 class YourBusinessClass {
-	// Dependency Injection ==> Fields Injection ==> No Setter or Constructor. Dependency is injecting using "Reflection" (@Autowired)
-	@Autowired
 	Dependency1 dependency1;
-	@Autowired
 	Dependency2 dependency2;
 	
+	public Dependency1 getDependency1() {
+		return dependency1;
+	}
+	
+	// Dependency Injection ==> Setter Injection
+	@Autowired
+	public void setDependency1(Dependency1 dependency1) {
+		System.out.println("Setter Injection - setDependency1 ");
+		this.dependency1 = dependency1;
+	}
+
+	@Autowired
+	public Dependency2 getDependency2() {
+		return dependency2;
+	}
+	
+	// Dependency Injection ==> Setter Injection
+	@Autowired
+	public void setDependency2(Dependency2 dependency2) {
+		System.out.println("Setter Injection - setDependency2 ");
+		this.dependency2 = dependency2;
+	}
+
+
+
 	public String toString() {
 		return "Using " + dependency1 + " and " + dependency2;
 	}
