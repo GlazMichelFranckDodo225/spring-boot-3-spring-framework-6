@@ -1,4 +1,4 @@
-package com.dgmf.learnspringframework.examples.a1;
+package com.dgmf.examples.a1;
 
 import java.util.Arrays;
 

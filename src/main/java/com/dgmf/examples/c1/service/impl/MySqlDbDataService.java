@@ -1,6 +1,6 @@
-package com.dgmf.learnspringframework.examples.c1.service.impl;
+package com.dgmf.examples.c1.service.impl;
 
-import com.dgmf.learnspringframework.examples.c1.service.DataService;
+import com.dgmf.examples.c1.service.DataService;
 import org.springframework.stereotype.Service;
 
 @Service

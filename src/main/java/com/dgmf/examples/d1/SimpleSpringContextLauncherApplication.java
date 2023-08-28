@@ -1,12 +1,11 @@
-package com.dgmf.learnspringframework.examples.a0;
+package com.dgmf.examples.d1;
 
-import java.util.Arrays;
-
+import com.dgmf.examples.a1.DependencyInjectionLauncherApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.dgmf.learnspringframework.examples.a1.DependencyInjectionLauncherApplication;
+import java.util.Arrays;
 
 @Configuration
 @ComponentScan

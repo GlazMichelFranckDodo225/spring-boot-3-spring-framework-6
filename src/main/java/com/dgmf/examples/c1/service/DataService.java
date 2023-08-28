@@ -1,4 +1,4 @@
-package com.dgmf.learnspringframework.examples.c1.service;
+package com.dgmf.examples.c1.service;
 
 public interface DataService {
     int[] retrieveData();

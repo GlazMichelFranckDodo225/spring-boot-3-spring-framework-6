@@ -1,4 +1,4 @@
-package com.dgmf.learnspringframework.game;
+package com.dgmf.game;
 
 import org.springframework.stereotype.Component;
 
