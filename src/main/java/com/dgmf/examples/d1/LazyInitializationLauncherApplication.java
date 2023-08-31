@@ -1,13 +1,10 @@
 package com.dgmf.examples.d1;
 
-import com.dgmf.examples.a1.DependencyInjectionLauncherApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 
 @Component
 class ClassA {
